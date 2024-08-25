@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMPTE ADMINISTRATEUR</title>
+
+    <link rel="stylesheet" href="css/form1.css" />
+  </head>
+  <body>
+    <div class="input-group">
+      <section>
+        <div >
+          <h3 class="titre">Creer un Compte Admin</h3>
+        </div>
+
+        <div>
+          <section>
+            <form method="post" action="">
+              <table>
+                <!-- input 1 pour le nom -->
+                <tr>
+                  <td>
+                    <input
+                      class="input"
+                      name="nom"
+                      type="text"
+                     title="votre nom svp"
+                      placeholder=" "
+                      size="30"
+                      maxlength="40"
+                      required
+                    />
+                    <label for="nom">votre nom</label>
+                  </td>
+                </tr>
+
+                <!-- input 2 pour le prenom -->
+                <tr>
+                  <td>
+                    <input
+                      class="input"
+                      name="prenom"
+                      type="text"
+                      title="votre prenom svp"
+                      placeholder=" "
+                      size="30"
+                      maxlength="40"
+                      required
+                    />
+                    <label for="nom">votre prenom</label>
+                  </td>
+                </tr>
+                <!-- input 3  pour le mot de passe -->
+                <tr>
+                  <td>
+                    <input
+                      class="input"
+                      name="mdp"
+                      type="password"
+                      placeholder=""
+                      size="30"
+                      maxlength="40"
+                      title="entrer votre mot de passe"
+                      required
+                    />
+                    <label for="nom">votre Mot de passe</label>
+                  </td>
+                </tr>
+                <!-- input 6 pour entrer l'address email ou numero de telephone-->
+                <tr>
+                  <td>
+                    <input
+                      class="input"
+                      name="addresse"
+                      type="email"
+                      placeholder=""
+                      title="entrer votre email ou votre numero de telephone"
+                      size="30"
+                      maxlength="40"
+                      required
+                    />
+                    <label for="address"
+                      >votre email ou numero de telephone</label
+                    >
+                  </td>
+                </tr>
+
+                <!--pour la case age...on va choisir son age -->
+                <tr>
+                  <td>
+                    <input
+                      class="input"
+                      type="datetime"
+                      name="age"
+                      value=""
+                      placeholder=""
+                      maxlength="40"
+                      size="30"
+                      title="entrer votre naissance ../../...."
+                      required
+                    />
+                    <label for="age">Votre annee de naissance</label>
+                  </td>
+                </tr>
+                <!-- votre nationalite -->
+                <tr>
+                  <td>
+                    <input
+                      class="input"
+                      name="nationalite"
+                      title=" entrer votre nationalite"
+                      size="30"
+                      maxlength="40"
+                      required
+                    />
+                    <label for="nationalite">votre nationalite</label>
+                  </td>
+                </tr>
+                <!-- un select pour le label genre -->
+                <tr>
+                  <td>
+                    <select
+                      class="input2"
+                      name="genre"
+                      id="1"
+                      title="choisissez votre genre"
+                      required
+                    >
+                      <option value="0">genre</option>
+                      <option value="1">M</option>
+                      <option value="2">F</option>
+                    </select>
+                  </td>
+                  <tr>
+                    <td>
+                    
+                     <a href="index.html">
+                     <input class="input3 connexion" type="submit" value="Envoyer" />
+                     </a>
+                   
+                    </td>
+                  </tr>
+                </tr>
+              </table>
+            </form>
+          </section>
+        </div>
+      </section>
+    </div>
+    <script src="js/form.js"></script>
+  </body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin page</title>
+
+    <!-- <link rel="stylesheet" href="css/admin.css" /> -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/8fba6344ac.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    
+    <header class="container-header">
+      <div class="header-left">
+            <div class="header-image-home">
+                  <img src="/image/home.png" alt="">
+            </div>
+            <h1 class="header-titre">Gestion de Menage</h1>
+            <div class="header-logo">
+              <img src="/image/logo.png" alt="">
+            </div>
+      </div>
+      <details>
+              <summary>
+                  <div class="header-right">
+                    <img src="/image/profile.png" alt="">
+                  </div>
+              </summary>
+              
+              <ul>
+                    <li>
+                      <i class="fa-solid fa-user"></i>
+                      Profile
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-gear"></i>
+                      Settings
+                    </li>
+                    <li> 
+                      <i class="fa-solid fa-right-from-bracket"></i>
+                        <a href="/authentification.html">Deconnexion</a>
+                     </li>
+              </ul>
+    </details>
+  </header>
+
+  <section class="section-principale-gauche">
+       <div class="container-gauche">
+            <div class="img-ordi">
+            
+                   <span><h1 class="titre-tableau-bord">TABLEAU DE BORD</h1></span>
+            </div>
+            <div class="ligne"></div>
+
+            <ul class="container-dashboard">
+                      
+                    <li>
+                          <a href="/FormEmployes.html">
+                            <i class="fa-solid fa-users"></i>
+                            <span class="link_name">Employes</span>
+                          </a>
+                    </li>
+                    <li>
+                          <a href="/FormMenage.html">
+                            <i class="fa-solid fa-users"></i>
+                            <span class="link_name">Manager</span>
+                          </a>
+                   </li>
+                    <li >
+                          <a href="/FormClient.html">
+                            <i class="fa-solid fa-users"></i>
+                            <span class="link_name">Client</span>
+                          </a>
+                        
+                    </li>
+                      
+
+                      
+                  </ul>
+
+     </div>
+
+</section>
+<section class="section-principale-droite">
+  <div class="container-droite">
+    <div class="content">
+        <div class="cards">
+            <div class="card">
+                <div class="box">
+                    <h1>10</h1>
+                    <h3>Employes</h3>
+                </div>
+                <div class="icon-case">
+                  <i class="fa-solid fa-users"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <h1>53</h1>
+                    <h3>Client</h3>
+                </div>
+                <div class="icon-case">
+                  <i class="fa-solid fa-users"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <h1>500</h1>
+                    <h3>Menage</h3>
+                </div>
+                <div class="icon-case">
+                  <i class="fa-solid fa-users"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <h1>350000</h1>
+                    <h3>Income</h3>
+                </div>
+                <div class="icon-case">
+                  <i class="fa-solid fa-users"></i>
+                </div>
+            </div>
+        </div>
+       
+        <div class="selection-nom">
+          <div class="select-client">
+          <label for="Client">Selection les Client</label>
+            <select name="client" id="Client">
+              <option value="julbert">Julbert Katembo</option>
+              <option value="francis">Francis MALULA</option>
+              <option value="lucie">Lucie Melissa</option>
+              <option value="samuela">ngumu Samuela</option>
+            </select>
+          </div>
+
+          <div class="select-menager">
+            <label for="menager">Selection un Menager</label>
+              <select name="menager" id="menager">
+                <option value="julbert">Julbert Katembo</option>
+                <option value="francis">Francis MALULA</option>
+                <option value="lucie">Lucie Melissa</option>
+                <option value="samuela">ngumu Samuela</option>
+              </select>
+            </div>
+        </div>
+        <div class="content-2">
+
+            <div class="recent-client">
+                <div class="title">
+                    <h2>Recent Demandes Client</h2>
+                    <a href="#" class="btn">View All</a>
+                </div>
+                <table>
+                    <tr>
+                        <th>Les Clients</th>
+                        <th>---></th>
+                        <th>Les Menagers</th>
+                        <th>Option</th>
+                    </tr>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>----></td>
+                        <td>Joshua</td>
+                        <td><a href="#" class="btn">View</a></td>
+                    </tr>
+                    <tr>
+                      <td>John Doe</td>
+                      <td>----></td>
+                      <td>Joshua</td>
+                      <td><a href="#" class="btn">View</a></td>
+                    </tr>
+                    <tr>
+                      <td>John Doe</td>
+                        <td>----></td>
+                        <td>Joshua</td>
+                        <td><a href="#" class="btn">View</a></td>
+                    </tr>
+                    <tr>
+                      <td>John Doe</td>
+                      <td>----></td>
+                      <td>Joshua</td>
+                      <td><a href="#" class="btn">View</a></td>
+                    </tr>
+                    <tr>
+                      <td>John Doe</td>
+                      <td>----></td>
+                      <td>Joshua</td>
+                      <td><a href="#" class="btn">View</a></td>
+                    </tr>
+                    <tr>
+                      <td>John Doe</td>
+                      <td>----></td>
+                      <td>Joshua</td>
+                      <td><a href="#" class="btn">View</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="new-client">
+                <div class="title">
+                    <h2>New Clients</h2>
+                    <a href="#" class="btn">View All</a>
+                </div>
+                <table>
+                    <tr>
+                        <th>Profile</th>
+                        <th>Name</th>
+                        <th>option</th>
+                    </tr>
+                    <tr>
+                        <td><img src="/image/user.png" alt=""></td>
+                        <td>John Steve Doe</td>
+                        <td><img src="/image/info.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/image/user.png" alt=""></td>
+                        <td>John Steve Doe</td>
+                        <td><img src="/image/info.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/image/user.png" alt=""></td>
+                        <td>John Steve Doe</td>
+                        <td><img src="/image/info.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/image/user.png" alt=""></td>
+                        <td>John Steve Doe</td>
+                        <td><img src="/image/info.png" alt=""></td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+    <script src="/js/app.js"></script>
+  </body>
+</html>

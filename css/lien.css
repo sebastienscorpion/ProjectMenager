@@ -1,0 +1,23 @@
+/* lien apres bouton qui va nous renvoyer a la page de creation du compte */
+.lien {
+  text-decoration: none;
+  color: rgb(234, 203, 203);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: block;
+}
+.lien:hover {
+  color: #780b9f;
+  text-decoration: underline;
+}
+
+/* lien pour nous rappeler notre mot de passe si on a oublier */
+.link {
+  text-decoration: none;
+  color: rgb(234, 203, 203);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: inline-block;
+}
+.link:hover {
+  color: #780b9f;
+  text-decoration: underline;
+}

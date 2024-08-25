@@ -1,0 +1,265 @@
+/* partie Authentification */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: url("../img/menage.jpg") no-repeat center center / cover; */
+
+  /* background-color: rgba(20, 16, 16, 0.959); */
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  /* bacground image */
+  background-image: radial-gradient(
+      circle at 84% 82%,
+      rgba(217, 217, 217, 0.03) 0%,
+      rgba(217, 217, 217, 0.03) 21%,
+      transparent 21%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 75% 56%,
+      rgba(3, 3, 3, 0.03) 0%,
+      rgba(3, 3, 3, 0.03) 30%,
+      transparent 30%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 74% 53%,
+      rgba(153, 153, 153, 0.03) 0%,
+      rgba(153, 153, 153, 0.03) 95%,
+      transparent 95%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 86% 43%,
+      rgba(209, 209, 209, 0.03) 0%,
+      rgba(209, 209, 209, 0.03) 83%,
+      transparent 83%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 64% 88%,
+      rgba(192, 192, 192, 0.03) 0%,
+      rgba(192, 192, 192, 0.03) 2%,
+      transparent 2%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 73% 77%,
+      rgba(205, 205, 205, 0.03) 0%,
+      rgba(205, 205, 205, 0.03) 18%,
+      transparent 18%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 57% 51%,
+      rgba(161, 161, 161, 0.03) 0%,
+      rgba(161, 161, 161, 0.03) 64%,
+      transparent 64%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 40% 84%,
+      rgba(115, 115, 115, 0.03) 0%,
+      rgba(115, 115, 115, 0.03) 14%,
+      transparent 14%,
+      transparent 100%
+    ),
+    linear-gradient(90deg, black, gray, #363735);
+}
+
+/* formulaire  de  l'entete*/
+
+.entete {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 35px;
+  font: weight 80px;
+  margin-bottom: 75px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* input-group */
+.input-group {
+  position: relative;
+  /* border: 1px solid #fff;
+  padding: 40px 80px; */
+}
+.input {
+  border: solid 1.5px #ffffff;
+  border-radius: 7px;
+  background: none;
+  padding: 15px;
+  font-size: 15px;
+  color: #ffffff;
+  cursor: alias;
+}
+label {
+  position: absolute;
+  left: 15px;
+  color: #eee9e9;
+  pointer-events: none;
+  transform: translateY(15px);
+  font-size: 15px;
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input:focus,
+input:valid {
+  outline: none;
+  border: 1.5px solid #fff;
+}
+.input:focus ~ label,
+input:valid ~ label {
+  transform: translateX(-10%) translateY(-50%) scale(0.9);
+  background-color: #212121;
+  padding: 0.2em;
+  color: #fff;
+}
+
+/* bouton se connecter */
+.input3 {
+  border: solid 1.5px #9e9e9e;
+  border-radius: 7px;
+  background: black;
+  padding: 0px 70px;
+  font-size: 15px;
+  color: #f5f5f5;
+  cursor: cell;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.connexion {
+  height: auto;
+  text-align: center;
+
+  border-radius: 7px;
+  background-color: rgb(141, 141, 148);
+  box-shadow: 5px 8px 90px 5px blueviolet;
+  margin-bottom: 10px;
+}
+.connexion:hover {
+  background-color: #ffffff;
+  border: 2px solid #521b66;
+  box-shadow: 3px 3px 3px #719fee;
+  color: rgb(104, 108, 104);
+  text-align: center;
+  font-size: 16px;
+  cursor: grab;
+}
+
+/* rendre le site responsive */
+/* Media queries pour la responsivité */
+
+/* Styles pour les écrans de petite taille (smartphones) */
+@media (max-width: 576px) {
+  body {
+    padding: 20px;
+  }
+
+  .entete {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .input-group {
+    margin-bottom: 20px;
+  }
+
+  .input {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 14px;
+    transform: translateY(10px);
+  }
+
+  .connexion {
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+}
+
+/* Styles pour les écrans de taille moyenne (tablettes) */
+@media (min-width: 577px) and (max-width: 992px) {
+  body {
+    padding: 40px;
+  }
+
+  .entete {
+    font-size: 32px;
+    margin-bottom: 60px;
+  }
+
+  .input-group {
+    margin-bottom: 30px;
+  }
+
+  .input {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  label {
+    font-size: 15px;
+    transform: translateY(12px);
+  }
+
+  .connexion {
+    padding-right: 80px;
+    padding-left: 80px;
+    margin-top: 40px;
+    margin-left: 5px;
+  }
+}
+
+/* Styles pour les écrans de grande taille (ordinateurs) */
+@media (min-width: 993px) {
+  body {
+    padding: 60px;
+  }
+
+  .entete {
+    font-size: 35px;
+    margin-bottom: 75px;
+  }
+
+  .input-group {
+    margin-bottom: 40px;
+  }
+
+  .input {
+    padding: 15px;
+    font-size: 15px;
+  }
+
+  label {
+    font-size: 15px;
+    transform: translateY(15px);
+  }
+
+  .connexion {
+    padding-right: 90px;
+    padding-left: 100px;
+    margin-top: 50px;
+    margin-left: 10px;
+  }
+}
